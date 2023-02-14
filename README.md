@@ -1,8 +1,8 @@
 # PriceOptiVision
 <h2>The problem PriceOptiVision solves</h2>
-Our Website provides a solution to these challenges by automating data visualization and providing future sales predictions and price optimization tools. The website is easy to use and requires no technical expertise, making it accessible to small business owners of all backgrounds and skill levels.
-Automated Data Visualization: The website will take your data and turn it into easy-to-understand charts and graphs.
-Future Sales Prediction: Our machine learning algorithms will help you predict future sales, giving you a clear understanding of what to expect in the coming months and years.
+Our Website provides a solution to these challenges by automating data visualization and providing future sales predictions and price optimization tools. The website is easy to use and requires no technical expertise, making it accessible to small business owners of all backgrounds and skill levels.<br>
+Automated Data Visualization: The website will take your data and turn it into easy-to-understand charts and graphs.<br>
+Future Sales Prediction: Our machine learning algorithms will help you predict future sales, giving you a clear understanding of what to expect in the coming months and years.<br>
 Price Optimization: Our website will help you optimize your prices based on market trends and demand, giving you an edge over your competitors.
 
 <h2>Challenges we ran into:-</h2>
