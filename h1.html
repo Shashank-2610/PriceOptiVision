@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainiacs</title>
+    <style>
+        .textbox {
+            flex: 1;
+            height: 100%;
+            border: none;
+            padding: 0 10px;
+            font-size: 16px;
+        }
+
+        .left {
+            border-right: 1px solid #ccc;
+        }
+
+        .right {
+            border-left: 1px solid #ccc;
+        }
+
+        .textbox:focus {
+            outline: none;
+            border: 1px solid #333;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .business-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+
+          .dropdown-btn {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+          }
+
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+
+    </style>
+</head>
+<body>
+    <form action="{{url_for('upload')}}" method="post">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1 class="business-name">Brainiacs</h1>
+        </div>
+    <center><div class="textbox-container">
+        <input type="text" class="textbox left" placeholder="Feature-1" style="padding: 10px;margin:10px;text-align:center">
+        <input type="text" class="textbox right" placeholder="Feature-2" style="padding: 10px;margin:10px;text-align:center">
+    </div></center><br>
+    <center><div><input type="text" placeholder="Year" style="padding: 10px;margin:10px;text-align:center"></div></center><br>
+    <center>
+        <div class="dropdown">
+        <button class="dropdown-btn">Types of Charts</button>
+        <div class="dropdown-content">
+          <a href="#">Bar Chart</a>
+          <a href="#">Scatter Chart</a>
+          <a href="#">Hitmap</a>
+          <a href="#">Li    ne Chart</a>
+        </div>
+      </div>
+        <button onclick="getNumber()">Generate Charts</button>
+    </center>
+    </form>
+</body>
+</html>
